@@ -1,0 +1,54 @@
+.atl/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.p12
+*.mobileprovision
+
+# Prevent nested repo metadata from being added accidentally
+client_flutter/.git/
+
+# Flutter generated artifacts
+client_flutter/.dart_tool/
+client_flutter/.flutter-plugins-dependencies
+client_flutter/build/
+client_flutter/.idea/
+client_flutter/android/.gradle/
+client_flutter/android/.kotlin/
+client_flutter/android/build/
+client_flutter/android/local.properties
+client_flutter/android/key.properties
+client_flutter/android/**/.cxx/
+client_flutter/android/**/captures/
+client_flutter/android/**/*.keystore
+client_flutter/android/**/*.jks
+client_flutter/ios/Pods/
+client_flutter/ios/.symlinks/
+client_flutter/ios/Flutter/ephemeral/
+client_flutter/ios/Flutter/app.flx
+client_flutter/ios/Flutter/app.zip
+client_flutter/ios/Flutter/flutter_assets/
+client_flutter/ios/Flutter/flutter_export_environment.sh
+client_flutter/ios/Runner/GeneratedPluginRegistrant.*
+client_flutter/linux/flutter/ephemeral/
+client_flutter/macos/Flutter/ephemeral/
+client_flutter/windows/flutter/ephemeral/
+
+# Binary build outputs
+*.apk
+*.aab
+*.ipa
+
+# Reference artifacts not needed in source control
+docs/requeriments/*.zip
